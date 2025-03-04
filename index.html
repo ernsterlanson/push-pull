@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push-Pull Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3498db">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Push-Pull">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon-192.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Push-Pull Tracker</h1>
+        
+        <div class="goals-section">
+            <h2>Set Today's Goals</h2>
+            <div class="input-group">
+                <label for="pushup-goal">Pushup Goal:</label>
+                <input type="number" id="pushup-goal" min="1" value="50">
+            </div>
+            <div class="input-group">
+                <label for="pullup-goal">Pullup Goal:</label>
+                <input type="number" id="pullup-goal" min="1" value="20">
+            </div>
+            <button id="set-goals-btn">Set Goals</button>
+        </div>
+
+        <div class="progress-section">
+            <h2>Today's Progress</h2>
+            <div class="progress-container">
+                <div class="exercise">
+                    <h3>Pushups</h3>
+                    <div class="progress-bar-container">
+                        <div id="pushup-progress-bar" class="progress-bar"></div>
+                    </div>
+                    <p><span id="pushup-completed">0</span> / <span id="pushup-goal-display">50</span></p>
+                </div>
+                <div class="exercise">
+                    <h3>Pullups</h3>
+                    <div class="progress-bar-container">
+                        <div id="pullup-progress-bar" class="progress-bar"></div>
+                    </div>
+                    <p><span id="pullup-completed">0</span> / <span id="pullup-goal-display">20</span></p>
+                </div>
+            </div>
+            <button id="reset-progress-btn" class="reset-button">Reset Today's Progress</button>
+        </div>
+
+        <div class="entry-section">
+            <h2>Add New Set</h2>
+            <div class="input-group">
+                <label for="exercise-type">Exercise:</label>
+                <select id="exercise-type">
+                    <option value="pushup">Pushups</option>
+                    <option value="pullup">Pullups</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="reps-done">Reps Done:</label>
+                <input type="number" id="reps-done" min="1" value="1">
+            </div>
+            <button id="add-set-btn">Add Set</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 

@@ -1,0 +1,27 @@
+To complete the app, you'll need to create two icon files:
+
+1. icon-192.png (192x192 pixels)
+2. icon-512.png (512x512 pixels)
+
+You can create these icons using any image editor or icon generator. Here are some options:
+
+1. Use an online icon generator like:
+   - https://www.favicon-generator.org/
+   - https://realfavicongenerator.net/
+   - https://www.canva.com/
+
+2. Create a simple icon with text "P+P" on a blue background (#3498db)
+
+3. Use an emoji-based icon with 💪 (flexed biceps) emoji
+
+4. Use a free icon from a site like:
+   - https://www.flaticon.com/
+   - https://www.iconfinder.com/
+   - https://thenounproject.com/
+
+Once created, place these icon files in the same directory as your index.html file.
+
+These icons will be used for:
+- App icon when installed on home screen
+- Favicon in browser
+- Splash screen when the app is launched 
